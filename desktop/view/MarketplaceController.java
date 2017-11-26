@@ -4,6 +4,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TextField;
+
+import java.util.function.Consumer;
 
 public class MarketplaceController {
 
@@ -12,6 +15,12 @@ public class MarketplaceController {
     //Fields
     @FXML
     private ChoiceBox sellCategory;
+    @FXML
+    private TextField title;
+    @FXML
+    private TextField price;
+    @FXML
+    private TextField description;
 
     //Intitialize
     @FXML
@@ -20,9 +29,13 @@ public class MarketplaceController {
     }
 
     //Testing
-    public void createPostButtonClicked(){
-        System.out.println("Create post clicked.");
+    public void createPostButtonClicked() {
+        System.out.println("Category: " + sellCategory.getValue());
+        System.out.println("Title: " + title.getText());
+        System.out.println("Price: $" + price.getText());
+        System.out.println("Description: " + description.getText());
     }
+
 
     public void newMessageButtonClicked(){
         System.out.println("New message clicked.");
