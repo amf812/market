@@ -6,9 +6,14 @@ public class Account {
     String username = "";
     String password = "";
     String email = "";
+    String securityQuestion;
+    String securityAnswer;
     String major = "";
 
-    public Account(String name, String username, String password, String email, String major){
+    public Account(String name, String username, String password, String email, String securityQuestion,
+                   String securityAnswer, String major){
+        this.securityQuestion = securityQuestion;
+        this.securityAnswer = securityAnswer;
         this.name = name;
         this.username = username;
         this.password = password;
@@ -31,6 +36,10 @@ public class Account {
     public String getEmail() {
         return email;
     }
+
+    public String getSecurityQuestion() { return securityQuestion; }
+
+    public String getSecurityAnswer() { return securityAnswer; }
 
     public String getMajor() {
         return major;

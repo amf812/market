@@ -19,15 +19,22 @@ public class CreateAccountController {
     private TextField email;
     @FXML
     private TextField major;
+    @FXML
+    private TextField securityQuestion;
+    @FXML
+    private TextField securityAnswer;
 
     public void createAccountButtonClicked() throws Exception{
 
-            Account A = new Account(name.getText(), username.getText(), password.getText(), email.getText(), major.getText());
+            Account A = new Account(name.getText(), username.getText(), password.getText(), email.getText(),
+                                    securityQuestion.getText(), securityAnswer.getText(), major.getText());
 
             System.out.println("Name: " + A.getName());
             System.out.println("Username: " + A.getUsername());
             System.out.println("Password: " + A.getPassword());
             System.out.println("Email: " + A.getEmail());
+            System.out.println("Security Question: " + A.getSecurityQuestion());
+            System.out.println("Security Answer: " + A.getSecurityAnswer());
             System.out.println("Major: " + A.getMajor());
 
             Parent scene10 = FXMLLoader.load(getClass().getResource("Marketplace.fxml"));
