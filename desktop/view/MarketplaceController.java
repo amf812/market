@@ -58,9 +58,4 @@ public class MarketplaceController {
         System.out.println("Allow others to DM me clicked.");
     }
 
-    public void reportButtonClicked(){
-        System.out.println("Report");
-    }
-
-
 }

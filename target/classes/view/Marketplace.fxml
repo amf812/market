@@ -105,7 +105,6 @@
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
                   <ToggleButton layoutX="50.0" layoutY="272.0" mnemonicParsing="false" onAction="#allowOthersToDMButtonClicked" text="Allow Others To Direct Message Me" />
-                  <Button layoutX="50.0" layoutY="355.0" mnemonicParsing="false" text="Edit Profile" />
                   <Label layoutX="50.0" layoutY="30.0" text="Name:">
                      <font>
                         <Font size="36.0" />
@@ -121,10 +120,10 @@
                         <Font size="36.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="180.0" layoutY="32.0" />
-                  <TextField layoutX="180.0" layoutY="105.0" />
-                  <TextField layoutX="329.0" layoutY="180.0" />
                   <Button layoutX="1407.0" layoutY="32.0" mnemonicParsing="false" onAction="#logOutButtonClicked" text="Log Out" />
+                  <Label layoutX="206.0" layoutY="40.0" text="User's Name Goes Here" />
+                  <Label layoutX="372.0" layoutY="188.0" text="User's Places to Meet Goes Here" />
+                  <Label layoutX="206.0" layoutY="113.0" text="User's Major Goes Here" />
                </children></AnchorPane>
          </content>
       </Tab>
