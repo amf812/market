@@ -82,7 +82,7 @@
                   <Button layoutX="23.0" layoutY="903.0" mnemonicParsing="false" onAction="#createPostButtonClicked" text="Create Post" />
                   <Label layoutX="25.0" layoutY="306.0" text="Describe Your Item Here:" />
                   <Label layoutX="14.0" layoutY="74.0" text="Category:" />
-                  <ChoiceBox fx:id="sellCategory" layoutX="92.0" layoutY="70.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="sellCategory" layoutX="129.0" layoutY="66.0" prefWidth="150.0" />
                   <Label layoutX="26.0" layoutY="162.0" text="Title:" />
                   <Label layoutX="24.0" layoutY="242.0" text="Price:" />
                   <TextField fx:id="title" layoutX="92.0" layoutY="158.0" />
@@ -104,30 +104,27 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <ImageView fitHeight="223.0" fitWidth="320.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-                  <ToggleButton layoutX="14.0" layoutY="903.0" mnemonicParsing="false" onAction="#allowOthersToDMButtonClicked" text="Allow Others To Direct Message Me" />
-                  <Button layoutX="1403.0" layoutY="14.0" mnemonicParsing="false" text="Edit Profile" />
-                  <Label layoutX="14.0" layoutY="257.0" text="Name:">
+                  <ToggleButton layoutX="50.0" layoutY="272.0" mnemonicParsing="false" onAction="#allowOthersToDMButtonClicked" text="Allow Others To Direct Message Me" />
+                  <Button layoutX="50.0" layoutY="355.0" mnemonicParsing="false" text="Edit Profile" />
+                  <Label layoutX="50.0" layoutY="30.0" text="Name:">
                      <font>
                         <Font size="36.0" />
                      </font>
                   </Label>
-                  <Label layoutX="15.0" layoutY="331.0" text="Major:">
+                  <Label layoutX="51.0" layoutY="104.0" text="Major:">
                      <font>
                         <Font size="36.0" />
                      </font>
                   </Label>
-                  <Label layoutX="14.0" layoutY="406.0" text="Places to Meet:">
+                  <Label layoutX="50.0" layoutY="179.0" text="Places to Meet:">
                      <font>
                         <Font size="36.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="144.0" layoutY="259.0" />
-                  <TextField layoutX="144.0" layoutY="332.0" />
-                  <TextField layoutX="293.0" layoutY="407.0" />
-                  <TextArea editable="false" layoutX="902.0" layoutY="760.0" prefHeight="129.0" prefWidth="614.0" text="Remember to only meet with someone in a public area.&#10;If you have a concern about a user please report them&#10;using the report button below." />
-                  <Button layoutX="1412.0" layoutY="903.0" mnemonicParsing="false" onAction="#reportButtonClicked" text="Report" />
-                  <Button layoutX="1418.0" layoutY="55.0" mnemonicParsing="false" onAction="#logOutButtonClicked" text="Log Out" />
+                  <TextField layoutX="180.0" layoutY="32.0" />
+                  <TextField layoutX="180.0" layoutY="105.0" />
+                  <TextField layoutX="329.0" layoutY="180.0" />
+                  <Button layoutX="1407.0" layoutY="32.0" mnemonicParsing="false" onAction="#logOutButtonClicked" text="Log Out" />
                </children></AnchorPane>
          </content>
       </Tab>
