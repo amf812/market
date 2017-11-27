@@ -32,10 +32,13 @@ public class MarketplaceController {
 
     //Testing
     public void createPostButtonClicked() {
-        System.out.println("Category: " + sellCategory.getValue());
-        System.out.println("Title: " + title.getText());
-        System.out.println("Price: $" + price.getText());
-        System.out.println("Description: " + description.getText());
+
+        Post p = new Post("user", sellCategory.getValue(), title.getText(), description.getText(), price.getText());
+
+        System.out.println("Category: " + p.getCategory());
+        System.out.println("Title: " + p.getTitle());
+        System.out.println("Description: " + p.getDescription());
+        System.out.println("Price: $" + p.getPrice());
     }
 
     public void logOutButtonClicked() throws Exception{

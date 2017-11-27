@@ -2,20 +2,24 @@ package view;
 
 public class Post {
     String description = "";
+    Object category = "";
     String title = "";
     String userName = "";
-    int price;
+    String price;
 
-    public Post(String userName, String title, String description, int price){
+    public Post(String userName, Object category, String title, String description, String price){
         this.userName = userName;
         this.title = title;
         this.description = description;
         this.price = price;
+        this.category = category;
     }
 
     public String getDescription() {
         return description;
     }
+
+    public Object getCategory() { return category; }
 
     public String getTitle() {
         return title;
@@ -25,9 +29,11 @@ public class Post {
         return userName;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
+
+    public void setCategory(Object category) { this.category = category; }
 
     public void setDescription(String description) {
         this.description = description;
@@ -37,7 +43,7 @@ public class Post {
         this.title = title;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 }
