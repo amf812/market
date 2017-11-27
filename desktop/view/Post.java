@@ -32,18 +32,4 @@ public class Post {
     public String getPrice() {
         return price;
     }
-
-    public void setCategory(Object category) { this.category = category; }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
 }
