@@ -9,6 +9,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
+import static view.Main.getPosts;
+//import static view.Main.makePost;
+
 public class MarketplaceController {
 
     ObservableList<String> sellCategoryList = FXCollections.observableArrayList("Textbooks","Electronics","Dorm Items","Housing","Tutoring");
@@ -39,6 +42,20 @@ public class MarketplaceController {
         System.out.println("Title: " + p.getTitle());
         System.out.println("Description: " + p.getDescription());
         System.out.println("Price: $" + p.getPrice());
+
+        //Sends the post to the database
+        /*try{
+            makePost();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
+
+        //Update the posts section
+        try {
+            getPosts();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void logOutButtonClicked() throws Exception{

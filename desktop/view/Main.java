@@ -28,6 +28,7 @@ public class Main extends Application{
         window.setTitle("GV Marketplace Login");
         window.setScene(new Scene(scene1, 850, 600));
         window.show();
+
     }
 
 
@@ -50,10 +51,13 @@ public class Main extends Application{
         return result.toString();
     }
 
+    public static void getPosts() throws  Exception {
+        System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
+    }
 
-        // Example System.out.println(getHTML(args[0]));
-
-
+    /*public static void makePost() throws Exception {
+        System.out.println("PLACE GET REQUEST HERE");
+    }*/
 
 }
 

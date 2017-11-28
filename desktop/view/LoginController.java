@@ -4,6 +4,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
+import static view.Main.getPosts;
+
 
 public class LoginController {
 
@@ -14,6 +16,12 @@ public class LoginController {
         Main.window.setTitle("GV Marketplace");
         Main.window.setScene(sc2);
         Main.window.show();
+
+        try {
+            getPosts();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void forgotPasswordButtonClicked() throws Exception{
