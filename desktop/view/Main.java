@@ -5,12 +5,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import jdk.nashorn.internal.parser.JSONParser;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.awt.*;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.ParseException;
+import java.util.Iterator;
 
 public class Main extends Application{
 
@@ -36,6 +40,36 @@ public class Main extends Application{
         launch(args);
     }
 
+    /*public static void parseJSON() {
+        JSONParser parser = new JSONParser();
+
+        try{
+            Object obj = parser.parse(new FileReader("myJSON.json"));
+            JSONObject jsonObject = (JSONObject) obj;
+            JSONArray postArray = (JSONArray) jsonObject.get("posts");
+
+
+            String email = (String) jsonObject.get("email");
+            Object category = (Object) jsonObject.get("category");
+            String title = (String) jsonObject.get("title");
+            String description = (String) jsonObject.get("description");
+            String price = (String) jsonObject.get("price");
+
+            //I thought this needed to be Iterator<String>  Verify that this is correct
+            Iterator<Object> iterator = postArray.iterator();
+
+            while(iterator.hasNext()){
+                System.out.println("Post: " + iterator.next());
+            }
+
+        }
+        catch(FileNotFoundException e) { e.printStackTrace();}
+        catch(IOException e) { e.printStackTrace();}
+        catch(ParseException e) { e.printStackTrace(); }
+        catch(Exception e) { e.printStackTrace(); }
+    }*/
+
+
 
     public static String getHTML(String urlToRead) throws Exception {
         StringBuilder result = new StringBuilder();
@@ -54,6 +88,26 @@ public class Main extends Application{
     public static void getPosts() throws  Exception {
         System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
     }
+
+    /*public static void getPostsCategory(String category) throws  Exception {
+
+        if(category == "Textbooks"){
+            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
+            //Create post items here in posts page
+        }
+        if(category == "Electronics"){
+            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
+        }
+        if(category == "Dorm Items"){
+            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
+        }
+        if(category == "Housing"){
+            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
+        }
+        if(category == "Tutoring"){
+            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
+        }
+    }*/
 
     /*public static void makePost() throws Exception {
         System.out.println("PLACE GET REQUEST HERE");

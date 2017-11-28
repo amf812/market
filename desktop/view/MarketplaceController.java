@@ -36,7 +36,7 @@ public class MarketplaceController {
     //Testing
     public void createPostButtonClicked() {
 
-        Post p = new Post("user", sellCategory.getValue(), title.getText(), description.getText(), price.getText());
+        Post p = new Post("test@test.com", sellCategory.getValue(), title.getText(), description.getText(), price.getText());
 
         System.out.println("Category: " + p.getCategory());
         System.out.println("Title: " + p.getTitle());

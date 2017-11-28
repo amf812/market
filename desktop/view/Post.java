@@ -4,11 +4,11 @@ public class Post {
     String description = "";
     Object category = "";
     String title = "";
-    String userName = "";
+    String email = "";
     String price;
 
-    public Post(String userName, Object category, String title, String description, String price){
-        this.userName = userName;
+    public Post(String email, Object category, String title, String description, String price){
+        this.email = email;
         this.title = title;
         this.description = description;
         this.price = price;
@@ -25,8 +25,8 @@ public class Post {
         return title;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getEmail() {
+        return email;
     }
 
     public String getPrice() {
