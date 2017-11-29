@@ -47,31 +47,11 @@
          <content>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Label layoutX="55.0" layoutY="93.0" text="Textbooks">
+                  <Label layoutX="20.0" layoutY="27.0" text="For Sale:">
                      <font>
                         <Font size="36.0" />
                      </font></Label>
-                  <Label layoutX="373.0" layoutY="93.0" text="Electronics">
-                     <font>
-                        <Font size="36.0" />
-                     </font></Label>
-                  <Label layoutX="689.0" layoutY="93.0" text="Dorm Items">
-                     <font>
-                        <Font size="36.0" />
-                     </font></Label>
-                  <Label layoutX="1346.0" layoutY="93.0" text="Tutoring">
-                     <font>
-                        <Font size="36.0" />
-                     </font></Label>
-                  <Label layoutX="1034.0" layoutY="93.0" text="Housing">
-                     <font>
-                        <Font size="36.0" />
-                     </font></Label>
-                  <ScrollPane layoutX="20.0" layoutY="198.0" prefHeight="719.0" prefWidth="233.0" />
-                  <ScrollPane layoutX="1297.0" layoutY="198.0" prefHeight="719.0" prefWidth="233.0" />
-                  <ScrollPane layoutX="984.0" layoutY="198.0" prefHeight="719.0" prefWidth="233.0" />
-                  <ScrollPane layoutX="666.0" layoutY="198.0" prefHeight="719.0" prefWidth="233.0" />
-                  <ScrollPane layoutX="341.0" layoutY="198.0" prefHeight="719.0" prefWidth="233.0" />
+                  <ScrollPane layoutX="20.0" layoutY="105.0" prefHeight="812.0" prefWidth="1517.0" />
                </children>
             </AnchorPane>
          </content>
@@ -91,14 +71,6 @@
                   <TextField fx:id="description" layoutX="25.0" layoutY="361.0" prefHeight="326.0" prefWidth="901.0" />
                </children>
             </AnchorPane>
-         </content>
-      </Tab>
-      <Tab text="Inbox">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-               <children>
-                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#newMessageButtonClicked" text="New Message" />
-               </children></AnchorPane>
          </content>
       </Tab>
       <Tab text="Profile">
