@@ -18,6 +18,9 @@ import java.util.Iterator;
 
 public class Main extends Application{
 
+        static String posts;
+        static String postsParsed[];
+
     static Stage window;
 
     public void start(Stage primaryStage) throws Exception{
@@ -38,7 +41,22 @@ public class Main extends Application{
 
     public static void main(String[] args) {
         launch(args);
+        }
+
+    public static void printPostsParsed(String URL){
+        try {
+            posts = getHTML(URL);
+            postsParsed = posts.split(",");
+            //Used for testing
+            for (int i = 0; i < postsParsed.length; i++){
+                System.out.println("" + postsParsed[i]);
+            }
+            System.out.println("postsParsed printed each element separately without relations present");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
 
     /*public static void parseJSON() {
         JSONParser parser = new JSONParser();
@@ -87,6 +105,12 @@ public class Main extends Application{
 
     public static void getPosts() throws  Exception {
         System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
+        String posts = getHTML("https://jsonplaceholder.typicode.com/posts");
+        String postsParsed[] = posts.split(",");
+        //Used for testing
+        /*for (int i = 0; i < postsParsed.length; i++){
+        System.out.println("" + postsParsed[i]);
+        }*/
     }
 
     /*public static void getPostsCategory(String category) throws  Exception {

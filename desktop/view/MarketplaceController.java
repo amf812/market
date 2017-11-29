@@ -9,8 +9,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
+
 import static view.Main.getPosts;
-//import static view.Main.makePost;
+import static view.Main.printPostsParsed;
 
 public class MarketplaceController {
 
@@ -72,7 +73,10 @@ public class MarketplaceController {
     }
 
     public void allowOthersToDMButtonClicked(){
+
         System.out.println("Allow others to DM me clicked.");
+        //Used for Testing
+        printPostsParsed("https://jsonplaceholder.typicode.com/posts");
     }
 
 }
