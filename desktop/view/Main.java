@@ -104,35 +104,11 @@ public class Main extends Application{
     }
 
     public static void getPosts() throws  Exception {
-        System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
-        String posts = getHTML("https://jsonplaceholder.typicode.com/posts");
+        System.out.println(getHTML("https://marketplace-7a251.firebaseio.com/Postings.json"));
+        String posts = getHTML("https://marketplace-7a251.firebaseio.com/Postings.json");
         String postsParsed[] = posts.split(",");
-        //Used for testing
-        /*for (int i = 0; i < postsParsed.length; i++){
-        System.out.println("" + postsParsed[i]);
-        }*/
     }
-
-    /*public static void getPostsCategory(String category) throws  Exception {
-
-        if(category == "Textbooks"){
-            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
-            //Create post items here in posts page
-        }
-        if(category == "Electronics"){
-            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
-        }
-        if(category == "Dorm Items"){
-            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
-        }
-        if(category == "Housing"){
-            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
-        }
-        if(category == "Tutoring"){
-            System.out.println(getHTML("https://jsonplaceholder.typicode.com/posts"));
-        }
-    }*/
-
+    
     /*public static void makePost() throws Exception {
         System.out.println("PLACE GET REQUEST HERE");
     }*/

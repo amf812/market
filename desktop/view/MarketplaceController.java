@@ -76,7 +76,7 @@ public class MarketplaceController {
 
         System.out.println("Allow others to DM me clicked.");
         //Used for Testing
-        printPostsParsed("https://jsonplaceholder.typicode.com/posts");
+        printPostsParsed("https://marketplace-7a251.firebaseio.com/Postings.json");
     }
 
 }
