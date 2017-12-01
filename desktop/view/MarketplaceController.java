@@ -8,7 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 
+
+import java.awt.event.ActionEvent;
 
 import static view.Main.getPosts;
 import static view.Main.makePost;
@@ -66,4 +69,26 @@ public class MarketplaceController {
         Main.window.setScene(sc7);
         Main.window.show();
     }
+
+
+    @FXML
+    Pane Post;
+    public void loadFxml ()  {
+        try {
+            Pane newLoadedPane = FXMLLoader.load(getClass().getResource("Post.fxml"));
+            Post.getChildren().add(newLoadedPane);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
+    public void loadButtonClicked() {
+        loadFxml();
+    }
+
+
+
+
+
 }

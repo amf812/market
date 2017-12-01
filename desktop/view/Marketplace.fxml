@@ -52,6 +52,7 @@
                         <Font size="36.0" />
                      </font></Label>
                   <ScrollPane layoutX="20.0" layoutY="105.0" prefHeight="812.0" prefWidth="1517.0" />
+                  <Button layoutX="1453.0" layoutY="28.0" mnemonicParsing="false" onAction="#loadButtonClicked" text="Load" />
                </children>
             </AnchorPane>
          </content>
