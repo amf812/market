@@ -72,15 +72,14 @@ public class MarketplaceController {
 
 
     @FXML
-    Pane Post;
-    public void loadFxml ()  {
+    private void loadFxml ()  {
+        Pane Post = new Pane();
         try {
             Pane newLoadedPane = FXMLLoader.load(getClass().getResource("Post.fxml"));
             Post.getChildren().add(newLoadedPane);
         } catch (Exception e){
             e.printStackTrace();
         }
-
     }
 
     public void loadButtonClicked() {
