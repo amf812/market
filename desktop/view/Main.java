@@ -108,10 +108,10 @@ public class Main extends Application{
         String posts = getHTML("https://marketplace-7a251.firebaseio.com/Postings.json");
         String postsParsed[] = posts.split(",");
     }
-    
-    /*public static void makePost() throws Exception {
+
+    public static void makePost() throws Exception {
         System.out.println("PLACE GET REQUEST HERE");
-    }*/
+    }
 
 }
 

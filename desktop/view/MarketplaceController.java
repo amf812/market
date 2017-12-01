@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 
 
 import static view.Main.getPosts;
+import static view.Main.makePost;
 import static view.Main.printPostsParsed;
 
 public class MarketplaceController {
@@ -34,7 +35,6 @@ public class MarketplaceController {
         sellCategory.setItems(sellCategoryList);
     }
 
-    //Testing
     public void createPostButtonClicked() {
 
         Post p = new Post("test@test.com", sellCategory.getValue(), title.getText(), description.getText(), price.getText());
@@ -45,11 +45,11 @@ public class MarketplaceController {
         System.out.println("Price: $" + p.getPrice());
 
         //Sends the post to the database
-        /*try{
+        try{
             makePost();
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
 
         //Update the posts section
         try {
@@ -66,17 +66,4 @@ public class MarketplaceController {
         Main.window.setScene(sc7);
         Main.window.show();
     }
-
-
-    public void newMessageButtonClicked(){
-        System.out.println("New message clicked.");
-    }
-
-    public void allowOthersToDMButtonClicked(){
-
-        System.out.println("Allow others to DM me clicked.");
-        //Used for Testing
-        printPostsParsed("https://marketplace-7a251.firebaseio.com/Postings.json");
-    }
-
 }

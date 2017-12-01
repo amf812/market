@@ -77,7 +77,6 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <ToggleButton layoutX="50.0" layoutY="272.0" mnemonicParsing="false" onAction="#allowOthersToDMButtonClicked" text="Allow Others To Direct Message Me" />
                   <Label layoutX="50.0" layoutY="30.0" text="Name:">
                      <font>
                         <Font size="36.0" />
