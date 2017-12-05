@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -9,18 +10,50 @@
 
 <AnchorPane prefHeight="615.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
    <children>
-      <Button layoutX="461.0" layoutY="356.0" mnemonicParsing="false" onAction="#loginButtonClicked" text="Login" />
-      <Button layoutX="506.0" layoutY="488.0" mnemonicParsing="false" onAction="#createAccountButtonClicked" text="Create New Account" />
-      <Label layoutX="253.0" layoutY="242.0" text="Username:" />
-      <Label layoutX="254.0" layoutY="299.0" text="Password:" />
-      <PasswordField layoutX="380.0" layoutY="295.0" />
-      <TextField layoutX="380.0" layoutY="238.0" />
       <ImageView fitHeight="87.0" fitWidth="586.0" layoutX="169.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@GVSU-Marketplace.PNG" />
          </image>
       </ImageView>
-      <Button layoutX="396.0" layoutY="417.0" mnemonicParsing="false" onAction="#forgotPasswordButtonClicked" text="Forgot Password?" />
-      <Label layoutX="234.0" layoutY="496.0" text="Don't have an Account?" />
+      <VBox alignment="CENTER" layoutX="246.0" layoutY="123.0" prefWidth="431.0">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Username:" />
+                  <TextField />
+               </children>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Password:" />
+                  <PasswordField />
+               </children>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="102.0" prefWidth="431.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#loginButtonClicked" text="Login" />
+                  <Button mnemonicParsing="false" onAction="#forgotPasswordButtonClicked" text="Forgot Password?" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label text="Don't have an Account?" />
+                  <Button mnemonicParsing="false" onAction="#createAccountButtonClicked" text="Create New Account" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

@@ -10,27 +10,45 @@
 <AnchorPane prefHeight="615.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CreateAccountController">
     <children>
         <Button layoutX="431.0" layoutY="550.0" mnemonicParsing="false" onAction="#createAccountButtonClicked" text="Create Account" />
-        <Label layoutX="257.0" layoutY="200.0" text="Username:" />
-        <Label layoutX="263.0" layoutY="250.0" text="Password:" />
-        <TextField fx:id="username" layoutX="379.0" layoutY="192.0" />
         <ImageView fitHeight="87.0" fitWidth="586.0" layoutX="169.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@GVSU-Marketplace.PNG" />
             </image>
         </ImageView>
-      <Label layoutX="172.0" layoutY="299.0" text="Confirm Password:" />
-      <TextField fx:id="password" layoutX="379.0" layoutY="291.0" />
-      <TextField layoutX="379.0" layoutY="242.0" />
-      <Label layoutX="301.0" layoutY="446.0" text="Major:" />
-      <TextField fx:id="securityQuestion" layoutX="379.0" layoutY="341.0" />
-      <Label layoutX="185.0" layoutY="141.0" text="Name (First Last):" />
-      <TextField fx:id="name" layoutX="379.0" layoutY="141.0" />
-      <TextField fx:id="securityAnswer" layoutX="379.0" layoutY="391.0" />
-      <TextField fx:id="major" layoutX="379.0" layoutY="438.0" />
-      <Label layoutX="58.0" layoutY="349.0" text="Password Recovery Question:" />
-      <Label layoutX="172.0" layoutY="399.0" text="Answer (to above):" />
       <Button layoutX="32.0" layoutY="36.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Back" />
-      <TextField fx:id="email" layoutX="379.0" layoutY="489.0" />
-      <Label layoutX="304.0" layoutY="497.0" text="Email:" />
+      <GridPane hgap="10.0" layoutX="256.0" layoutY="153.0" prefHeight="357.0" prefWidth="351.0" vgap="15.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name (First Last):" />
+              <Label text="Username:" GridPane.rowIndex="1" />
+              <Label text="Password:" GridPane.rowIndex="2" />
+            <Label text="Confirm Password:" GridPane.rowIndex="3" />
+            <Label text="Password Recovery Question:" GridPane.rowIndex="4" />
+            <Label text="Answer (to above):" GridPane.rowIndex="5" />
+            <Label text="Major:" GridPane.rowIndex="6" />
+            <Label text="Email:" GridPane.rowIndex="7" />
+            <TextField fx:id="name" GridPane.columnIndex="1" />
+              <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="securityQuestion" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="securityAnswer" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="major" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
     </children>
 </AnchorPane>
