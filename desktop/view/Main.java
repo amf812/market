@@ -12,6 +12,8 @@ import org.json.JSONObject;
 import java.awt.*;
 import java.io.*;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URL;
 import java.text.ParseException;
 import java.util.Iterator;
@@ -115,9 +117,22 @@ public class Main extends Application{
     public static void makePost(JSONObject o) throws Exception {
         URL url = new URL("https://marketplace-7a251.firebaseio.com/Postings.json");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setRequestMethod("Put");
-
-        System.out.println("PLACE GET REQUEST HERE");
+        try {
+            conn.setDoOutput(true);
+            conn.setRequestMethod("Put");
+            OutputStreamWriter out = new OutputStreamWriter(
+                    conn.getOutputStream());
+            out.write(o);
+            out.close();
+            conn.getInputStream();
+        }
+        catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (ProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

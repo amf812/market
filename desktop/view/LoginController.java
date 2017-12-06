@@ -1,27 +1,41 @@
 package view;
 
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.HBox;
+
+import java.awt.*;
 
 import static view.Main.getPosts;
 
 
 public class LoginController {
 
+    /*@FXML
+    private HBox username;
+    @FXML
+    private HBox password;*/
+
     //Changes scenes.
     public void loginButtonClicked() throws Exception{
-        Parent scene2 = FXMLLoader.load(getClass().getResource("Marketplace.fxml"));
-        Scene sc2 = new Scene(scene2);
-        Main.window.setTitle("GV Marketplace");
-        Main.window.setScene(sc2);
-        Main.window.show();
 
-        try {
-            getPosts();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        //if(username.getAccessibleText() == "amf812" && password.getAccessibleText() == "test") {
+
+
+            Parent scene2 = FXMLLoader.load(getClass().getResource("Marketplace.fxml"));
+            Scene sc2 = new Scene(scene2);
+            Main.window.setTitle("GV Marketplace");
+            Main.window.setScene(sc2);
+            Main.window.show();
+
+            try {
+                getPosts();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        //}
     }
 
     public void forgotPasswordButtonClicked() throws Exception{

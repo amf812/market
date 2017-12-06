@@ -18,8 +18,6 @@ public class CreateAccountController {
     @FXML
     private TextField email;
     @FXML
-    private TextField major;
-    @FXML
     private TextField securityQuestion;
     @FXML
     private TextField securityAnswer;
@@ -27,7 +25,7 @@ public class CreateAccountController {
     public void createAccountButtonClicked() throws Exception{
 
             Account A = new Account(name.getText(), username.getText(), password.getText(), email.getText(),
-                                    securityQuestion.getText(), securityAnswer.getText(), major.getText());
+                                    securityQuestion.getText(), securityAnswer.getText());
 
             System.out.println("Name: " + A.getName());
             System.out.println("Username: " + A.getUsername());

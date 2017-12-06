@@ -10,15 +10,17 @@ public class Account {
     String securityAnswer;
     String major = "";
 
+    Account test = new Account("Alex", "amf812","test", "test@test.com",
+            "What college do you go to?", "GVSU");
+
     public Account(String name, String username, String password, String email, String securityQuestion,
-                   String securityAnswer, String major){
+                   String securityAnswer){
         this.securityQuestion = securityQuestion;
         this.securityAnswer = securityAnswer;
         this.name = name;
         this.username = username;
         this.password = password;
         this.email = email;
-        this.major = major;
     }
 
     public String getName() {
