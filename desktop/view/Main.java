@@ -112,7 +112,11 @@ public class Main extends Application{
         }
     }
 
-    public static void makePost() throws Exception {
+    public static void makePost(JSONObject o) throws Exception {
+        URL url = new URL("https://marketplace-7a251.firebaseio.com/Postings.json");
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("Put");
+
         System.out.println("PLACE GET REQUEST HERE");
     }
 
