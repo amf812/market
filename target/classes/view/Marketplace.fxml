@@ -83,20 +83,8 @@
                         <Font size="36.0" />
                      </font>
                   </Label>
-                  <Label layoutX="51.0" layoutY="104.0" text="Major:">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="50.0" layoutY="179.0" text="Places to Meet:">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </Label>
                   <Button layoutX="1407.0" layoutY="32.0" mnemonicParsing="false" onAction="#logOutButtonClicked" text="Log Out" />
                   <Label layoutX="206.0" layoutY="40.0" text="User's Name Goes Here" />
-                  <Label layoutX="372.0" layoutY="188.0" text="User's Places to Meet Goes Here" />
-                  <Label layoutX="206.0" layoutY="113.0" text="User's Major Goes Here" />
                </children></AnchorPane>
          </content>
       </Tab>
