@@ -59,38 +59,6 @@ public class Main extends Application{
         }
     }
 
-
-    /*public static void parseJSON() {
-        JSONParser parser = new JSONParser();
-
-        try{
-            Object obj = parser.parse(new FileReader("myJSON.json"));
-            JSONObject jsonObject = (JSONObject) obj;
-            JSONArray postArray = (JSONArray) jsonObject.get("posts");
-
-
-            String email = (String) jsonObject.get("email");
-            Object category = (Object) jsonObject.get("category");
-            String title = (String) jsonObject.get("title");
-            String description = (String) jsonObject.get("description");
-            String price = (String) jsonObject.get("price");
-
-            //I thought this needed to be Iterator<String>  Verify that this is correct
-            Iterator<Object> iterator = postArray.iterator();
-
-            while(iterator.hasNext()){
-                System.out.println("Post: " + iterator.next());
-            }
-
-        }
-        catch(FileNotFoundException e) { e.printStackTrace();}
-        catch(IOException e) { e.printStackTrace();}
-        catch(ParseException e) { e.printStackTrace(); }
-        catch(Exception e) { e.printStackTrace(); }
-    }*/
-
-
-
     public static String getHTML(String urlToRead) throws Exception {
         StringBuilder result = new StringBuilder();
         URL url = new URL(urlToRead);
@@ -114,15 +82,16 @@ public class Main extends Application{
         }
     }
 
-    public static void makePost(JSONObject o) throws Exception {
-       /* URL url = new URL("https://marketplace-7a251.firebaseio.com/Postings.json");
+    //This block is currently not working and is commented out for demoing purposes
+    /*public static void makePost(JSONObject o) throws Exception {
+        URL url = new URL("https://marketplace-7a251.firebaseio.com/Postings.json");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         try {
             conn.setDoOutput(true);
             conn.setRequestMethod("Put");
             OutputStreamWriter out = new OutputStreamWriter(
                     conn.getOutputStream());
-            out.write(o);
+            out.write(o.toString());
             out.close();
             conn.getInputStream();
         }
@@ -132,8 +101,8 @@ public class Main extends Application{
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
-    }
+        }
+    }*/
 
 }
 

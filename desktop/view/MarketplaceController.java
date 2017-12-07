@@ -15,7 +15,7 @@ import org.json.JSONObject;
 import java.awt.event.ActionEvent;
 
 import static view.Main.getPosts;
-import static view.Main.makePost;
+//import static view.Main.makePost;
 import static view.Main.printPostsParsed;
 
 public class MarketplaceController {
@@ -61,11 +61,12 @@ public class MarketplaceController {
         System.out.println("Price: $" + p.getPrice());*/
 
         //Sends the post to the database
-        try{
+        //Currently commented out for presenting reasons
+        /*try{
             makePost(json);
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
 
         //Update the posts section
         try {
