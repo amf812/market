@@ -115,7 +115,7 @@ public class Main extends Application{
     }
 
     public static void makePost(JSONObject o) throws Exception {
-        URL url = new URL("https://marketplace-7a251.firebaseio.com/Postings.json");
+       /* URL url = new URL("https://marketplace-7a251.firebaseio.com/Postings.json");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         try {
             conn.setDoOutput(true);
@@ -132,7 +132,7 @@ public class Main extends Application{
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
 }
