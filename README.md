@@ -1,2 +1,2 @@
 # market
-Desktop Javadoc: https://amf812.github.io/market/
+Javadoc: https://amf812.github.io/market/
