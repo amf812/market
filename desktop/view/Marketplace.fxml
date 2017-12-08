@@ -84,7 +84,7 @@
                      </font>
                   </Label>
                   <Button layoutX="1407.0" layoutY="32.0" mnemonicParsing="false" onAction="#logOutButtonClicked" text="Log Out" />
-                  <Label layoutX="206.0" layoutY="40.0" text="User's Name Goes Here" />
+                  <Label layoutX="206.0" layoutY="40.0" text="amf812" />
                </children></AnchorPane>
          </content>
       </Tab>
